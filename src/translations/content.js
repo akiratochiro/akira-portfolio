@@ -13,13 +13,13 @@ export const content = {
     projects: {
       title: "Projects",
       projectcards: {
-        title1: "Family Tree",
-        description1:
+        title1: "In My Fridge",
+        description1: "A full-stack application that helps users manage ingredients in their fridge and discover recipes based on them using an external API.",
+        title2: "Family Tree",
+        description2:
           "Drag and Drop your relatives and picture your family tree!",
-        title2: "Travel Planner",
-        description2: "A full stack application for planning trips and managing itineraries.",
-        title3: "Wedding Manager",
-        description3: "Platform for RSVP management, budget tracking and wedding planning.",
+        title3: "Travel Planner",
+        description3: "A full stack application for planning trips and managing itineraries.",
       },
     },
     skills:{
@@ -49,14 +49,14 @@ export const content = {
     projects: {
       title: "Projects",
       projectcards: {
-        title1: "Árvore Genealógica",
-        description1:
+         title1: "Na Minha Geladeira",
+        description1: "Aplicação fullstack que ajuda usuários a gerenciar os ingredientes da geladeira e descobrir receitas a partir deles usando uma API externa.",
+        title2: "Árvore Genealógica",
+        description2:
           "Arraste e solte seus parentes para visualizar e organizar sua árvore genealógica.",
-        title2: "Planejador de Viagens",
-        description2: "Uma aplicação full stack para planejar viagens e gerenciar itinerários.",
-        title3: "Gerenciador de Casamento",
-        description3: "Plataforma para gerenciamento de confirmações de presença (RSVP), controle de orçamento e planejamento de casamentos",
-      },
+        title3: "Planejador de Viagens",
+        description3: "Uma aplicação full stack para planejar viagens e gerenciar itinerários.",
+        },
     },
 
      skills:{
