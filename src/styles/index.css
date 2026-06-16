@@ -1,0 +1,152 @@
+/* :root {
+  --background: #00090a;
+  --surface: #002b2c;
+  --primary: #006869;
+  --secondary: #99a2a1;
+  --text: #dcdedd;
+  --accent: #ff8800;
+} */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body,
+#root {
+  min-height: 100vh;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  color: var(--surface);
+  background: linear-gradient(
+    135deg,
+    #dcdedd 0%,
+    #cfd4d3 50%,
+    #bfc7c6 100%
+  );
+}
+
+.CardHeader {
+  color: var(--primary);
+  font-family: "Inter", sans-serif;
+}
+
+.CardHeader:hover {
+  color: var(--text);
+  background-color: var(--primary);
+}
+
+.CardTittle {
+  color: var(--surface);
+    font-family: "Inter", sans-serif;
+
+}
+
+.CardText{
+    font-family: "Inter", sans-serif;
+  color: var(--background)
+}
+
+.header{
+    font-family: "Inter", sans-serif;
+
+}
+
+.ProjectCardImage {
+  width: 150px;
+  height: 55%;
+  object-fit: cover;
+  margin: 0 auto;
+  display: block;
+}
+
+.OpenProjectButton{
+      font-family: "Inter", sans-serif;
+color: var(--text);
+background-color: var(--accent);
+border: none;
+}
+
+.OpenProjectButton:hover{
+      font-family: "Inter", sans-serif;
+color: var(--accent);
+background-color: var(--text);
+border: none;
+}
+
+.OpenGitButton{
+font-family: "Inter", sans-serif;
+color: var(--text);
+background-color: var(--background);
+border: none;
+}
+
+.OpenGitButton:hover{
+      font-family: "Inter", sans-serif;
+color: var(--background);
+background-color: var(--text);
+border: none;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 20px;
+}
+
+.skill-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  color: var(--accent);
+    transition: all 0.2s ease;
+
+}
+
+.skill-card:hover {
+  color: var(--primary);
+    transform: translateY(-2px);
+
+}
+
+.skill-card svg {
+  font-size: 3rem;
+}
+
+.contact-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.contact-buttons a {
+  background-color: var(--primary);
+  color: var(--text);
+
+  padding: 12px 24px;
+  border: none;
+  border-radius: 10px;
+  text-decoration: none;
+
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  transition: all 0.2s ease;
+}
+
+.contact-buttons a:hover {
+  background-color: var(--accent);
+  transform: translateY(-2px);
+}
