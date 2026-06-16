@@ -16,7 +16,7 @@ import {
   FaNpm,
 } from "react-icons/fa";
 
-import { SiTypescript, SiMysql, SiMongodb, SiClaude } from "react-icons/si";
+import { SiTypescript, SiMysql, SiMongodb } from "react-icons/si";
 
 export default function Skills({ language }) {
   const skills = [
