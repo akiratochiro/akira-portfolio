@@ -3,7 +3,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import ProjectCard from "./ProjectCard";
 import UnderConstruction from "../images/uc.jpg";
-import In-My-Fridge from "../images/in-my-fridge.png";
+import InMyFridgeShot from "../images/in-my-fridge.png";
 import { content } from "../translations/content";
 
 
@@ -17,7 +17,7 @@ function Projects({language}) {
 
             <Col md={4}>
             <ProjectCard
-              image={In-My-Fridge}
+              image={InMyFridgeShot}
               title={content[language].projects.projectcards.title1}
               description={content[language].projects.projectcards.description1}
               github="https://github.com/akiratochiro/In-My-Fridge/"
