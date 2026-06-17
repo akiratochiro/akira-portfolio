@@ -1,32 +1,45 @@
-import Card from "react-bootstrap/Card";
-import Button from "react-bootstrap/Button";
-
-function ProjectCard({ image, title, description, github, demo }) {
+function ProjectCard({ image, title, description, github, demo, techs }) {
   return (
-    <Card style={{ width: "22rem" }}>
-      <Card.Img className="ProjectCardImage" variant="top" src={image} />
+    <div className="project-card" data-aos="zoom-in">
+      <div className="project-image-container">
+        <img src={image} alt={title} className="project-image" />
+      </div>
 
-      <Card.Body>
-        <Card.Title className="CardTittle">{title}</Card.Title>
+      <div className="project-content">
+        <h3 className="project-title">{title}</h3>
 
-        <Card.Text className="CardText">{description}</Card.Text>
+        <p className="project-description">{description}</p>
 
-        <div className="d-flex gap-2">
-          <Button className="OpenProjectButton"
+        <div className="project-buttons">
+          <a
             href={demo}
             target="_blank"
+            rel="noopener noreferrer"
+            className="project-demo-btn"
           >
-            Open
-          </Button>
-          <Button className="OpenGitButton"
+            Live Demo
+          </a>
+
+          <a
             href={github}
             target="_blank"
+            rel="noopener noreferrer"
+            className="project-github-btn"
           >
             GitHub
-          </Button>
+          </a>
         </div>
-      </Card.Body>
-    </Card>
+        <footer className="project-footer">
+          <ul className="project-tech-list">
+            {techs.map((tech, index) => (
+              <li key={index} className="project-tech-item">
+                {tech}
+              </li>
+            ))}
+          </ul>
+        </footer>
+      </div>
+    </div>
   );
 }
 
