@@ -381,7 +381,6 @@ body {
   font-size: 1.1rem;
 }
 
-
 .tech-icons {
   display: flex;
   flex-wrap: wrap;
@@ -391,6 +390,8 @@ body {
 }
 
 .tech-icon {
+  position: relative; /* necessário para posicionar a tooltip */
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -409,6 +410,44 @@ body {
   transform: translateY(-4px) scale(1.1);
 }
 
+.tech-tooltip {
+  position: absolute;
+  bottom: 130%;
+  left: 50%;
+  transform: translateX(-50%) translateY(4px);
+
+  background: var(--secondary);
+  color: var(--bg, #fff);
+
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-size: 0.75rem;
+  white-space: nowrap;
+
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+
+  pointer-events: none;
+  z-index: 10;
+}
+
+.tech-tooltip::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+
+  border: 5px solid transparent;
+  border-top-color: var(--secondary);
+}
+
+.tech-icon:hover .tech-tooltip {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(0);
+}
 .projects-section {
   min-height: 80vh;
 

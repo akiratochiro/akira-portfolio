@@ -1,15 +1,14 @@
 import ProjectCard from "./ProjectCard";
 import UnderConstruction from "../images/uc.jpg";
 import InMyFridgeShot from "../images/in-my-fridge.png";
+import ShortYourLinkShot from "../images/shortyourlink.png";
 import { content } from "../translations/content";
 
 function Projects({ language }) {
   return (
     <section className="projects-section" id="projects" data-aos="fade-up">
       <div className="projects-header">
-        <span className="projects-tag">
-          Portfolio
-        </span>
+        <span className="projects-tag">Portfolio</span>
 
         <h2 className="projects-title">{content[language].projects.title}</h2>
 
@@ -33,12 +32,12 @@ function Projects({ language }) {
 
         <div data-aos="zoom-in" data-aos-delay="150">
           <ProjectCard
-            image={UnderConstruction}
+            image={ShortYourLinkShot}
             title={content[language].projects.projectcards.title2}
             description={content[language].projects.projectcards.description2}
-            github="https://github.com/your-user/project1"
-            demo="https://project1.com"
-            techs={["React", "Node.js", "MongoDB"]}
+            github="https://github.com/akiratochiro/ShortYourLink"
+            demo="https://shortyourlink.onrender.com"
+            techs={["Next.js", "Docker", "Jest"]}
           />
         </div>
 

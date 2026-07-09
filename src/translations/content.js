@@ -25,9 +25,9 @@ export const content = {
         title1: "In My Fridge",
         description1:
           "A full-stack application that helps users discover recipes based on ingredients in their fridge using an external API.",
-        title2: "Family Tree",
-        description2:
-          "Drag and Drop your relatives and picture your family tree!",
+        title2: "ShortYourLink",
+description2:
+  "A URL shortener application built with Next.js, containerized with Docker and covered by Jest tests.",
         title3: "Travel Planner",
         description3:
           "A full stack application for planning trips and managing itineraries.",
@@ -76,10 +76,9 @@ export const content = {
         title1: "Na Minha Geladeira",
         description1:
           "Aplicação fullstack que ajuda usuários a descobrir receitas com base nos ingredientes da geladeira usando uma API externa.",
-        title2: "Árvore Genealógica",
-        description2:
-          "Arraste e solte seus parentes para visualizar e organizar sua árvore genealógica.",
-        title3: "Planejador de Viagens",
+        title2: "ShortYourLink",
+description2:
+  "Aplicação encurtadora de URLs construída com Next.js, containerizada com Docker e coberta por testes com Jest.",  title3: "Planejador de Viagens",
         description3:
           "Uma aplicação full stack para planejar viagens e gerenciar itinerários.",
       },
