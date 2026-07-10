@@ -1,11 +1,11 @@
 import React from "react";
 import { Navbar, Nav} from "react-bootstrap";
-import { content } from "../translations/content";
+import { content, t } from "../translations/content";
 
 export default function NavBar({ language, setLanguage }) {
     return(
 <Navbar expand="lg"   fixed="top" className="custom-navbar">
-  <Navbar.Brand href="#home" className="navbar-brand-custom">
+  <Navbar.Brand href="#Home" className="navbar-brand-custom">
     akira
   </Navbar.Brand>
 
@@ -19,15 +19,15 @@ export default function NavBar({ language, setLanguage }) {
       </Nav.Link>
 
       <Nav.Link href="#about">
-        {content[language].header.title}
+        {t(content.header.title, language)}
       </Nav.Link>
 
       <Nav.Link href="#projects">
-        {content[language].projects.title}
+        {t(content.projects.title, language)}
       </Nav.Link>
 
       <Nav.Link href="#contact">
-        {content[language].contact.header}
+        {t(content.contact.header, language)}
       </Nav.Link>
 
       <button

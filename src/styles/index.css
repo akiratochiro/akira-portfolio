@@ -1,3 +1,4 @@
+
 :root {
   --background: #00090a;
   --surface: #002b2c;
@@ -513,8 +514,10 @@ body {
 }
 
 .about-image {
-  width: 380px;
-  height: 480px;
+  width: 100%;
+  max-width: 380px;
+  height: auto;
+  aspect-ratio: 380 / 480;
 
   object-fit: cover;
 
@@ -565,39 +568,105 @@ body {
   color: white;
 }
 
+/* ===== Tablet / Mobile (<=768px) ===== */
 @media (max-width: 768px) {
-  section {
-    padding: 2rem 1rem;
+  .custom-navbar {
+    padding: 0.75rem 1.25rem;
   }
 
-  ul {
+  section,
+  .hero-section,
+  .about-section,
+  .projects-section,
+  .contact-section {
+    padding: 3rem 1.25rem;
+  }
+
+  .about-section {
     flex-direction: column;
-    gap: 0.8rem;
+    text-align: center;
+    gap: 2.5rem;
+    min-height: auto;
   }
 
-  li {
+  .about-image-container {
+    width: 100%;
+  }
+
+  .about-image,
+  .about-image-placeholder {
+    width: 100%;
+    max-width: 320px;
+    height: auto;
+    aspect-ratio: 3 / 4;
+  }
+
+  .about-content {
     max-width: 100%;
   }
+
+  .tech-icons {
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-form {
+    max-width: 100%;
+  }
+
+  .contact-links {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+  }
 }
 
+/* ===== Mobile pequeno (<=480px) ===== */
 @media (max-width: 480px) {
-  h1,
-h2,
-h3 {
-  font-weight: 700;
-  color: var(--surface);
-}
+  .hero-section {
+    padding: 5rem 1.25rem 3rem;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .hero-buttons a {
+    text-align: center;
+    width: 100%;
+  }
 
   p {
     font-size: 0.9rem;
   }
 
-  input[type="email"] {
-    max-width: 90%;
+  .project-buttons {
+    flex-direction: column;
   }
 
-  button {
-    width: 90%;
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .contact-form button {
+    width: 100%;
+  }
+
+  .tech-icon {
+    font-size: 1.8rem;
+  }
+
+  .language-toggle-navbar {
+    margin-left: 0.75rem;
+    padding: 0.35rem 0.7rem;
+    font-size: 0.8rem;
   }
 }
 

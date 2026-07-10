@@ -1,5 +1,5 @@
 import React from "react";
-import { content } from "../translations/content";
+import { content, t } from "../translations/content";
 import portrait from "../images/portrait.png";
 
 import {
@@ -70,22 +70,22 @@ export default function About({ language }) {
 
       {/* Right Side */}
       <div className="about-content">
-        <span className="about-tag">{content[language].about.header}</span>
+        <span className="about-tag">{t(content.about.header, language)}</span>
 
         <h2 className="about-title" data-aos="fade-up">
-          {content[language].about.title}
+          {t(content.about.title, language)}
         </h2>
 
         <p className="about-text" data-aos="fade-up">
-          {content[language].about.text1}
+          {t(content.about.text1, language)}
         </p>
 
         <p className="about-text" data-aos="fade-up">
-          {content[language].about.text2}
+          {t(content.about.text2, language)}
         </p>
 
         <div className="about-stack">
-          <h3>Tech Stack</h3>
+          <h3>{t(content.about.stackTitle, language)}</h3>
           <div className="tech-icons">
             {skills.map((skill) => (
               <div className="tech-icon" key={skill.name}>

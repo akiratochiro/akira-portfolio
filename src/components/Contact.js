@@ -1,21 +1,21 @@
 import React from "react";
 import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
-import { content } from "../translations/content";
+import { content, t } from "../translations/content";
 
 export default function Contact({ language }) {
   return (
     <section className="contact-section" id="contact" data-aos="fade-up">
 
       <span className="contact-tag">
-        {content[language].contact.header}
+        {t(content.contact.header, language)}
       </span>
 
       <h2 className="contact-title">
-        {content[language].contact.title}
+        {t(content.contact.title, language)}
       </h2>
 
       <p className="contact-text">
-        {content[language].contact.text}
+        {t(content.contact.text, language)}
       </p>
 
       <a
@@ -31,19 +31,19 @@ export default function Contact({ language }) {
         <input
           type="email"
           placeholder={
-            content[language].contact.emailLabel
+            t(content.contact.emailLabel, language)
           }
         />
 
         <textarea
           rows="6"
           placeholder={
-            content[language].contact.messageLabel
+            t(content.contact.messageLabel, language)
           }
         />
 
         <button type="submit">
-          {content[language].contact.button}
+          {t(content.contact.button, language)}
         </button>
 
       </form>

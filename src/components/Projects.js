@@ -2,7 +2,7 @@ import ProjectCard from "./ProjectCard";
 import UnderConstruction from "../images/uc.jpg";
 import InMyFridgeShot from "../images/in-my-fridge.png";
 import ShortYourLinkShot from "../images/shortyourlink.png";
-import { content } from "../translations/content";
+import { content, t } from "../translations/content";
 
 function Projects({ language }) {
   return (
@@ -10,10 +10,10 @@ function Projects({ language }) {
       <div className="projects-header">
         <span className="projects-tag">Portfolio</span>
 
-        <h2 className="projects-title">{content[language].projects.title}</h2>
+        <h2 className="projects-title">{t(content.projects.title, language)}</h2>
 
         <p className="projects-subtitle">
-          {content[language].projects.subtitle}
+          {t(content.projects.subtitle, language)}
         </p>
       </div>
 
@@ -22,8 +22,8 @@ function Projects({ language }) {
           {" "}
           <ProjectCard
             image={InMyFridgeShot}
-            title={content[language].projects.projectcards.title1}
-            description={content[language].projects.projectcards.description1}
+            title={t(content.projects.projectcards.title1, language)}
+            description={t(content.projects.projectcards.description1, language)}
             github="https://github.com/akiratochiro/In-My-Fridge/"
             demo="https://in-my-fridge-liard.vercel.app"
             techs={["Javascript", "API", "Vite"]}
@@ -33,8 +33,8 @@ function Projects({ language }) {
         <div data-aos="zoom-in" data-aos-delay="150">
           <ProjectCard
             image={ShortYourLinkShot}
-            title={content[language].projects.projectcards.title2}
-            description={content[language].projects.projectcards.description2}
+            title={t(content.projects.projectcards.title2, language)}
+            description={t(content.projects.projectcards.description2, language)}
             github="https://github.com/akiratochiro/ShortYourLink"
             demo="https://shortyourlink.onrender.com"
             techs={["Next.js", "Docker", "Jest"]}
@@ -44,8 +44,8 @@ function Projects({ language }) {
         <div data-aos="zoom-in" data-aos-delay="300">
           <ProjectCard
             image={UnderConstruction}
-            title={content[language].projects.projectcards.title3}
-            description={content[language].projects.projectcards.description3}
+            title={t(content.projects.projectcards.title3, language)}
+            description={t(content.projects.projectcards.description3, language)}
             github="https://github.com/your-user/project2"
             demo="https://project2.com"
             techs={["Vue.js", "Express", "PostgreSQL"]}
