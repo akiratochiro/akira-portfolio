@@ -46,9 +46,9 @@ function Projects({ language }) {
             image={UnderConstruction}
             title={t(content.projects.projectcards.title3, language)}
             description={t(content.projects.projectcards.description3, language)}
-            github="https://github.com/your-user/project2"
+            github="https://github.com/akiratochiro/kanbix"
             demo="https://project2.com"
-            techs={["Vue.js", "Express", "PostgreSQL"]}
+            techs={["Next.js", "Jest", "Prisma"]}
           />
         </div>
       </div>

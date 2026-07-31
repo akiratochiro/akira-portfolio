@@ -80,12 +80,12 @@ export const content = {
         pt: "Aplicação encurtadora de URLs construída com Next.js, containerizada com Docker e coberta por testes com Jest.",
       },
       title3: {
-        en: "Travel Planner",
-        pt: "Travel Planner",
+        en: "Kanbix",
+        pt: "Kanbix",
       },
       description3: {
-        en: "A full stack application for planning trips and managing itineraries.",
-        pt: "Uma aplicação full stack para planejar viagens e gerenciar itinerários.",
+        en: "A full-stack project management platform inspired by Trello and Jira, built with Next.js, TypeScript, Prisma and PostgreSQL, featuring drag-and-drop boards, JWT authentication, and a Dockerized CI/CD pipeline.",
+        pt: "Uma plataforma full-stack de gerenciamento de projetos inspirada em Trello e Jira, construída com Next.js, TypeScript, Prisma e PostgreSQL, com quadros drag-and-drop, autenticação JWT e pipeline CI/CD containerizado.",
       },
     },
   },
