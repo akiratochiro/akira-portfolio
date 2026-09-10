@@ -1,3 +1,6 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 :root {
   --background: #00090a;
@@ -20,10 +23,35 @@
   --radius-pill: 999px;
 }
 
-* {
+*,
+::before,
+::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+/* Base bits previously provided by Bootstrap Reboot, kept 1:1 to avoid
+   any visual shift now that Bootstrap is removed. */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p {
+  margin-bottom: 1rem;
 }
 
 html {
@@ -51,6 +79,7 @@ body,
 
 body {
   font-family: "Inter", sans-serif;
+  line-height: 1.5;
   color: var(--text);
   background: var(--background)
 }
