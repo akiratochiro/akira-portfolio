@@ -657,6 +657,24 @@ body {
   padding: 1.75rem;
 }
 
+.project-status {
+  align-self: flex-start;
+
+  padding: 0.3rem 0.8rem;
+
+  margin-bottom: 1rem;
+
+  border-radius: 999px;
+
+  background-color: var(--accentbackground);
+
+  color: var(--accent);
+
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.02rem;
+}
+
 .project-title {
   color: var(--text);
 
@@ -707,6 +725,20 @@ body {
   background-color: var(--accent);
 
   color: var(--background);
+}
+
+.project-demo-btn--disabled {
+  background-color: transparent;
+
+  border: 1px dashed var(--secondary);
+
+  color: var(--secondary);
+
+  opacity: 0.7;
+
+  cursor: not-allowed;
+
+  pointer-events: none;
 }
 
 .project-github-btn {

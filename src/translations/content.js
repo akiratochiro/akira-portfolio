@@ -62,6 +62,14 @@ export const content = {
       en: "A selection of projects showcasing my journey in full-stack development, cloud technologies and modern web applications.",
       pt: "Uma seleção de projetos que mostram minha jornada em desenvolvimento full-stack, tecnologias de nuvem e aplicações web modernas.",
     },
+    wipStatus: {
+      en: "In development",
+      pt: "Em desenvolvimento",
+    },
+    comingSoon: {
+      en: "Coming soon",
+      pt: "Em breve",
+    },
     projectcards: {
       title1: {
         en: "In My Fridge",
@@ -84,8 +92,8 @@ export const content = {
         pt: "Kanbix",
       },
       description3: {
-        en: "A full-stack project management platform inspired by Trello and Jira, built with Next.js, TypeScript, Prisma and PostgreSQL, featuring drag-and-drop boards, JWT authentication, and a Dockerized CI/CD pipeline.",
-        pt: "Uma plataforma full-stack de gerenciamento de projetos inspirada em Trello e Jira, construída com Next.js, TypeScript, Prisma e PostgreSQL, com quadros drag-and-drop, autenticação JWT e pipeline CI/CD containerizado.",
+        en: "A full-stack project management platform inspired by Trello and Jira, currently in development. Built as a TypeScript monorepo with Prisma and PostgreSQL: a REST API for workspaces, boards, lists and cards, JWT authentication, role-based permissions, and a unit + integration test suite running in CI. The Next.js front-end is still early-stage.",
+        pt: "Uma plataforma full-stack de gerenciamento de projetos inspirada em Trello e Jira, atualmente em desenvolvimento. Construída como um monorepo TypeScript com Prisma e PostgreSQL: uma API REST para workspaces, quadros, listas e cartões, autenticação JWT, permissões por papel e uma suíte de testes unitários e de integração rodando em CI. O front-end em Next.js ainda está em estágio inicial.",
       },
     },
   },

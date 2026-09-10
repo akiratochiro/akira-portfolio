@@ -47,7 +47,9 @@ function Projects({ language }) {
             title={t(content.projects.projectcards.title3, language)}
             description={t(content.projects.projectcards.description3, language)}
             github="https://github.com/akiratochiro/kanbix"
-            demo="https://project2.com"
+            status={t(content.projects.wipStatus, language)}
+            demoLabel={t(content.projects.comingSoon, language)}
+            demoDisabled
             techs={["Next.js", "Jest", "Prisma"]}
           />
         </div>
