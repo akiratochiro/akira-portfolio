@@ -1,5 +1,4 @@
 import ProjectCard from "./ProjectCard";
-import UnderConstruction from "../images/uc.jpg";
 import InMyFridgeShot from "../images/in-my-fridge.png";
 import ShortYourLinkShot from "../images/shortyourlink.png";
 import Kanbix from "../images/Kanbix.png";
