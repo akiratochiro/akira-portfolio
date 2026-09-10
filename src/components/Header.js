@@ -4,7 +4,7 @@ import developerIllustration from "../images/undraw_programming_j1zw.svg";
 
 function Header({ language }) {
   return (
-    <header className="hero-section" id="Home">
+    <header className="hero-section" id="home">
 
       {/* Left Side */}
       <div className="hero-content">
@@ -27,16 +27,15 @@ function Header({ language }) {
 
         <div className="hero-details">
           <p>📍 {t(content.header.location, language)}</p>
-          <p>🚀 {t(content.header.status, language)}</p>
         </div>
 
         <div className="hero-buttons">
           <a href="#projects" className="btn-primary-custom">
-            {t(content.header.projectsbuttom, language)}
+            {t(content.header.projectsButton, language)}
           </a>
 
           <a href="#contact" className="btn-secondary-custom">
-            {t(content.header.contactbutton, language)}
+            {t(content.header.contactButton, language)}
           </a>
         </div>
 

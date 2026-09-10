@@ -5,7 +5,7 @@ import { content, t } from "../translations/content";
 export default function NavBar({ language, setLanguage }) {
     return(
 <Navbar expand="lg"   fixed="top" className="custom-navbar">
-  <Navbar.Brand href="#Home" className="navbar-brand-custom">
+  <Navbar.Brand href="#home" className="navbar-brand-custom">
     akira
   </Navbar.Brand>
 
@@ -14,12 +14,12 @@ export default function NavBar({ language, setLanguage }) {
   <Navbar.Collapse id="basic-navbar-nav">
     <Nav className="ms-auto align-items-center">
 
-    <Nav.Link href="#Home">
+    <Nav.Link href="#home">
         Home
       </Nav.Link>
 
       <Nav.Link href="#about">
-        {t(content.header.title, language)}
+        {t(content.about.header, language)}
       </Nav.Link>
 
       <Nav.Link href="#projects">

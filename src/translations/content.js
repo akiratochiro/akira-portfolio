@@ -20,11 +20,11 @@ export const content = {
       en: "Passionate about building modern web applications with React, Node.js, databases, and cloud technologies. Combining a strong engineering mindset with international experience to create scalable and user-focused solutions.",
       pt: "Apaixonado por construir aplicações web modernas com React, Node.js, bancos de dados e tecnologias de nuvem. Combinando uma mentalidade de engenharia sólida com experiência internacional para criar soluções escaláveis e focadas no usuário.",
     },
-    projectsbuttom: {
+    projectsButton: {
       en: "View Projects",
       pt: "Ver Projetos",
     },
-    contactbutton: {
+    contactButton: {
       en: "Contact Me",
       pt: "Contato",
     },
