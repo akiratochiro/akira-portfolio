@@ -276,12 +276,6 @@ body {
   .hero-buttons {
     justify-content: center;
   }
-
-  .illustration-placeholder {
-    width: 250px;
-    height: 250px;
-    font-size: 5rem;
-  }
 }
 
 .about-section {
@@ -303,30 +297,6 @@ body {
 
   display: flex;
   justify-content: center;
-}
-
-.about-image-placeholder {
-  width: 380px;
-  height: 480px;
-
-  border-radius: 24px;
-
-  background: linear-gradient(
-    135deg,
-    var(--primary),
-    var(--background)
-  );
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  color: var(--text);
-
-  font-size: 1.2rem;
-  font-weight: 600;
-
-  box-shadow: 0 20px 50px var(--background);
 }
 
 .about-content {
@@ -418,7 +388,7 @@ body {
   transform: translateX(-50%) translateY(4px);
 
   background: var(--secondary);
-  color: var(--bg, #fff);
+  color: var(--background, #fff);
 
   padding: 4px 10px;
   border-radius: 6px;
@@ -525,44 +495,6 @@ body {
 
   box-shadow: 0 20px 50px var(--background);
 }
-.card {
-  border: none;
-  border-radius: 16px;
-
-  background: var(--text);
-
-  box-shadow:
-    0 4px 12px var(--background);
-
-  backdrop-filter: blur(8px);
-}
-
-.language-toggle {
-  position: fixed;
-
-  top: 20px;
-  right: 20px;
-
-  background: var(--primary);
-  color: var(--text);
-
-  border: none;
-  border-radius: 10px;
-
-  padding: 10px 16px;
-
-  cursor: pointer;
-
-  transition: all 0.2s ease;
-
-  z-index: 1000;
-}
-
-.language-toggle:hover {
-  background: var(--background);
-  transform: translateY(-2px);
-}
-
 ::selection {
   background: var(--primary);
   color: white;
@@ -593,8 +525,7 @@ body {
     width: 100%;
   }
 
-  .about-image,
-  .about-image-placeholder {
+  .about-image {
     width: 100%;
     max-width: 320px;
     height: auto;

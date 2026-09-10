@@ -1,4 +1,3 @@
-import React from "react";
 import { content, t } from "../translations/content.js";
 import developerIllustration from "../images/undraw_programming_j1zw.svg";
 
