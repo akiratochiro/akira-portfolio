@@ -2,6 +2,7 @@ import ProjectCard from "./ProjectCard";
 import UnderConstruction from "../images/uc.jpg";
 import InMyFridgeShot from "../images/in-my-fridge.png";
 import ShortYourLinkShot from "../images/shortyourlink.png";
+import Kanbix from "../images/kanbix.png";
 import { content, t } from "../translations/content";
 
 function Projects({ language }) {
@@ -43,13 +44,12 @@ function Projects({ language }) {
 
         <div data-aos="zoom-in" data-aos-delay="300">
           <ProjectCard
-            image={UnderConstruction}
+            image={Kanbix}
             title={t(content.projects.projectcards.title3, language)}
             description={t(content.projects.projectcards.description3, language)}
             github="https://github.com/akiratochiro/kanbix"
             status={t(content.projects.wipStatus, language)}
-            demoLabel={t(content.projects.comingSoon, language)}
-            demoDisabled
+            demo="https://kanbix-web.vercel.app/"
             techs={["Next.js", "Jest", "Prisma"]}
           />
         </div>
