@@ -1,4 +1,3 @@
-import React from "react";
 import { content, t } from "../translations/content";
 import portrait from "../images/portrait.png";
 

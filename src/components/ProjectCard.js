@@ -1,4 +1,14 @@
-function ProjectCard({ image, title, description, github, demo, techs }) {
+function ProjectCard({
+  image,
+  title,
+  description,
+  github,
+  demo,
+  demoLabel,
+  demoDisabled,
+  status,
+  techs,
+}) {
   return (
     <div className="project-card" data-aos="zoom-in">
       <div className="project-image-container">
@@ -6,19 +16,30 @@ function ProjectCard({ image, title, description, github, demo, techs }) {
       </div>
 
       <div className="project-content">
+        {status && <span className="project-status">{status}</span>}
+
         <h3 className="project-title">{title}</h3>
 
         <p className="project-description">{description}</p>
 
         <div className="project-buttons">
-          <a
-            href={demo}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="project-demo-btn"
-          >
-            Live Demo
-          </a>
+          {demoDisabled ? (
+            <span
+              className="project-demo-btn project-demo-btn--disabled"
+              aria-disabled="true"
+            >
+              {demoLabel || "Live Demo"}
+            </span>
+          ) : (
+            <a
+              href={demo}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="project-demo-btn"
+            >
+              {demoLabel || "Live Demo"}
+            </a>
+          )}
 
           <a
             href={github}
