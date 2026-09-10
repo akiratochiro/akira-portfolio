@@ -7,6 +7,7 @@
   --text: #dcdedd;
   --accent: #ff8800;
   --accentbackground: #ff880026;
+  --error: #ff6b6b;
 
   /* Layout */
   --navbar-height: 79px;
@@ -27,6 +28,19 @@
 
 html {
   scroll-behavior: smooth;
+}
+
+/* Visually hidden but available to screen readers */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
 }
 
 html,
@@ -731,6 +745,26 @@ body {
   padding: 1rem;
 
   cursor: pointer;
+}
+
+.contact-form button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.contact-feedback {
+  margin-top: 0.25rem;
+
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.contact-feedback--success {
+  color: var(--accent);
+}
+
+.contact-feedback--error {
+  color: var(--error);
 }
 
 .contact-links {

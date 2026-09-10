@@ -111,6 +111,10 @@ export const content = {
       en: "Interested in working together, discussing a project, or just saying hello? Feel free to send me a message and I'll get back to you as soon as possible.",
       pt: "Tem interesse em trabalhar comigo, discutir um projeto ou simplesmente trocar uma ideia? Envie uma mensagem e responderei assim que possível.",
     },
+    nameLabel: {
+      en: "Your Name",
+      pt: "Seu Nome",
+    },
     emailLabel: {
       en: "Your Email",
       pt: "Seu Email",
@@ -122,6 +126,26 @@ export const content = {
     button: {
       en: "Send Message",
       pt: "Enviar Mensagem",
+    },
+    sending: {
+      en: "Sending...",
+      pt: "Enviando...",
+    },
+    success: {
+      en: "Thanks! Your message has been sent — I'll get back to you soon.",
+      pt: "Obrigado! Sua mensagem foi enviada — retorno em breve.",
+    },
+    error: {
+      en: "Something went wrong. Please try again or email me directly.",
+      pt: "Algo deu errado. Tente novamente ou me envie um email direto.",
+    },
+    validationRequired: {
+      en: "Please fill in your name, email and message.",
+      pt: "Preencha nome, email e mensagem.",
+    },
+    validationEmail: {
+      en: "Please enter a valid email address.",
+      pt: "Insira um endereço de email válido.",
     },
   },
 };
