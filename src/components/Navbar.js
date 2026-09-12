@@ -10,7 +10,7 @@ export default function NavBar({ language, setLanguage }) {
         href="#home"
         className="navbar-brand-custom mr-4 whitespace-nowrap py-[0.3125rem] no-underline"
       >
-        akira
+        ~/akira
       </a>
 
       <button
@@ -66,6 +66,10 @@ export default function NavBar({ language, setLanguage }) {
         >
           {language === "en" ? "🇧🇷 PT" : "🇺🇸 EN"}
         </button>
+
+        <span className="cmd-hint hidden lg:inline-flex">
+          <kbd>/</kbd> quick nav
+        </span>
       </div>
     </nav>
   );

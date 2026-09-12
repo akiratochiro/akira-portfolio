@@ -1,5 +1,5 @@
 import { content, t } from "../translations/content.js";
-import developerIllustration from "../images/undraw_programming_j1zw.svg";
+import Terminal from "./Terminal";
 
 function Header({ language }) {
   return (
@@ -9,6 +9,7 @@ function Header({ language }) {
       <div className="hero-content">
 
         <span className="hero-tag">
+          <span className="status-dot" />
           {t(content.header.status, language)}
         </span>
 
@@ -17,7 +18,7 @@ function Header({ language }) {
         </h1>
 
         <h2 className="hero-title">
-          💻 {t(content.header.title, language)}
+          {t(content.header.title, language)}
         </h2>
 
         <p className="hero-description">
@@ -42,14 +43,7 @@ function Header({ language }) {
 
       {/* Right Side */}
       <div className="hero-illustration">
-
-        {/* Placeholder */}
-        <img
-    src={developerIllustration}
-    alt="Developer Illustration"
-    className="hero-svg"
-  />
-
+        <Terminal language={language} />
       </div>
 
     </header>

@@ -4,6 +4,7 @@ import Header from "./components/Header";
 import About from "./components/About";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
+import CommandPalette from "./components/CommandPalette";
 import { useState, useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -30,6 +31,7 @@ function App() {
       <About language={language} />
       <Projects language={language} />
       <Contact language={language} />
+      <CommandPalette language={language} setLanguage={setLanguage} />
     </div>
   );
 }
