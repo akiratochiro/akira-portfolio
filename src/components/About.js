@@ -1,5 +1,5 @@
 import { content, t } from "../translations/content";
-import portrait from "../images/portrait.png";
+import portrait from "../images/portrait.webp";
 
 import {
   FaHtml5,

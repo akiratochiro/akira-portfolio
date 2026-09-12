@@ -1,7 +1,7 @@
 import ProjectCard from "./ProjectCard";
-import InMyFridgeShot from "../images/in-my-fridge.png";
-import ShortYourLinkShot from "../images/shortyourlink.png";
-import Kanbix from "../images/kanbix.png";
+import InMyFridgeShot from "../images/in-my-fridge.webp";
+import ShortYourLinkShot from "../images/shortyourlink.webp";
+import Kanbix from "../images/kanbix.webp";
 import { content, t } from "../translations/content";
 
 function Projects({ language }) {
